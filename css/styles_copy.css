@@ -43,43 +43,16 @@ input {
     margin: 0;
 }
 
-
 .container {
-    min-width: 320px;
-    max-width: 767px;
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
-    .container {
-        min-width: 768px;
-        max-width: 1157px;
-    }
-}
-
-@media (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-
-
 .section {
-    padding: 96px 0;
+    padding: 120px 0;
 }
-
-@media (min-width: 1158px) {
-    .section {
-        padding: 120px 0;
-    }
-}
-
-
 
 .visually-hidden {
     position: absolute;
@@ -233,53 +206,20 @@ input {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-width: 320px;
-    max-width: 767px;
-    padding: 72px 0;
-    margin: 56px auto 0;
-}
-
-@media (min-width: 768px) and (max-width: 1157px) {
-    .banner {
-        min-width: 768px;
-        max-width: 1157px;
-        padding: 112px 0;
-        margin: 72px auto 0;
-    }
-}
-
-@media (min-width: 1158px) {
-    .banner {
-        min-width: 1158px;
-        max-width: 1440px;
-        padding: 188px 0;
-        margin: 72px auto 0;
-    }
+    max-width: 1440px;
+    padding: 188px 0;
+    margin: 72px auto 0;
 }
 
 .banner-title {
     color: #ffffff;
-    font-size: 36px;
+    font-size: 56px;
     font-style: normal;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    max-width: 288px;
-    margin: 0 auto 72px;
-}
-
-@media (min-width: 768px) {
-    .banner-title {
-        font-size: 56px;
-        max-width: 496px;
-        margin: 0 auto 36px;
-    }
-}
-
-@media (min-width: 1158px) {
-    .banner-title {
-        margin: 0 auto 48px;
-    }
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 
 .banner-button {
@@ -328,104 +268,48 @@ input {
 
 .features-list {
     display: flex;
-    flex-direction: column;
-    gap: 72px;
+    justify-content: center;
+    gap: 24px;
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
-    .features-list {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
-    }
-}
-
-@media (min-width: 1158px) {
-    .features-list {
-        flex-direction: row;
-        justify-content: center;
-        gap: 24px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1157px) {
-    .features-item {
-        flex-basis: calc((100% - 24px) / 2);
-    }
-}
-
-@media (min-width: 1158px) {
-    .features-item {
-        flex-basis: calc((100% - 3* 24px) / 4);
-    }
+.features-item {
+    flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .features-icon-container {
-    display: none;
-}
-
-@media (min-width: 1158px) {
-    .features-icon-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 112px;
-        margin-bottom: 8px;
-        background-color: #F4F4FD;
-        border-radius: 4px;
-        border: 1px solid #8E8F99;
-    }
+    /* display: block;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
 }
 
 .features-icon-container .icon {
     fill: #2E2F42;
 }
 
-
 .features-item-title {
     color: #2e2f42;
-    font-size: 36px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
     margin-bottom: 8px;
-    text-align: center;
 }
-
-@media (min-width: 768px) {
-    .features-item-title {
-        text-align: left;
-    }
-}
-
-@media (min-width: 1158px) {
-    .features-item-title {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.08em;
-        margin-bottom: 8px;
-    }
-}
-
-
 
 .features-item-text {
     color: #434455;
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-@media (min-width: 1158px) {
-    .features-item-text {
-        font-weight: 400;
-    }
 }
 
 /* ==== STAFF ==== */
@@ -768,7 +652,7 @@ input {
 }
 
 
-/* ====== MODAL ORDER SERVICE ====== */
+/* ====== MODAL ====== */
 
 
 .backdrop {
@@ -1012,113 +896,3 @@ input[type="checkbox"]:checked + label > span {
 .no-scroll {
     overflow: hidden;
 }
-
-
-/* ====== MODAL MENU ====== */
-
-
-/* .modal-menu-is-hidden {
-    opacity: 1;
-    visibility: hiddev;
-    pointer-events: none;
-}
-
-.modal-menu {
-    position: relative;
-    padding: 72px 24px 40px 16px;
-    background-color: #fff;
-    height: 100vh;
-    width: 100vh;
-}
-
-.modal-menu-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-close-button {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    right: 24px;
-    top: 24px;
-    background-color: #E7E9FC;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition:
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-close-button .close-icon {
-    fill: #2E2F42;
-}
-
-.modal-nav-block {
-    margin-bottom: 168px;
-}
-
-.modal-nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.modal-nav-item {}
-
-.modal-nav-link {
-    color: #2E2F42;
-    font-family: "Roboto", sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
-
-.modal-nav-link:active {
-    color: #404BBF;
-}
-
-.modal-nav-link:nth-child(1) {
-    color: #404BBF;
-    font-family: "Roboto", sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
-
-.modal-address-block {
-    margin-bottom: 48px;
-}
-
-.modal-address-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.modal-address-item {}
-
-.modal-address-link {
-    color: #434455;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
-.modal-address-link:active {
-    color: #404BBF;
-} */

@@ -48,6 +48,82 @@
                 </svg>
             </button>
         </div>
+
+        <!-- ====== MOBILE MENU ====== -->
+
+        <div class="modal-menu-wrapper">
+            <div class="menu-backdrop is-hidden" data-menu>
+                <div class="modal-menu-container">
+                    <button type="button" class="menu-close-button" data-menu-close>
+                        <svg class="close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#close-button"></use>
+                        </svg>
+                    </button>
+                    <nav class="modal-nav-block">
+                        <ul class="modal-nav-list">
+                            <li class="modal-nav-item">
+                                <a href="./index.html" class="modal-nav-link" data-menu-close>Studio</a>
+                            </li>
+                            <li class="modal-nav-item">
+                                <a href="./index.html" class="modal-nav-link" data-menu-close>Portfolio</a>
+                            </li>
+                            <li class="modal-nav-item">
+                                <a href="./index.html" class="modal-nav-link" data-menu-close>Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="modal-address-block">
+                        <ul class="modal-address-list">
+                            <li class="modal-address-item">
+                                <a href="tel:+110001111111" class="modal-address-link" data-menu-close>+11 (000)
+                                    111-11-11</a>
+                            </li>
+                            <li class="modal-address-item">
+                                <a href="mailto:info@devstudio.com" class="modal-address-link"
+                                      data-menu-close>info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="modal-menu-media-list">
+                        <li class="modal-menu-media-item">
+                            <a class="modal-menu-media-link" href="https://www.instagram.com/" target="_blank"
+                                  rel="no-opener no-referrer">
+                                <svg class="icon-container" width="24" height="24">
+                                    <use class="icon" href="./images/icons.svg#instagram" width="24" height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-menu-media-item">
+                            <a class="modal-menu-media-link" href="https://twitter.com/?lang=uk" target="_blank"
+                                  rel="no-opener no-referrer">
+                                <svg class="icon-container" width="24" height="24">
+                                    <use class="icon" href="./images/icons.svg#twitter" width="24" height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-menu-media-item">
+                            <a class="modal-menu-media-link" href="https://www.facebook.com/" target="_blank"
+                                  rel="no-opener no-referrer">
+                                <svg class="icon-container" width="24" height="24">
+                                    <use class="icon" href="./images/icons.svg#facebook" width="24" height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-menu-media-item">
+                            <a class="modal-menu-media-link" href="https://www.linkedin.com/" target="_blank"
+                                  rel="no-opener no-referrer">
+                                <svg class="icon-container" width="24" height="24">
+                                    <use class="icon" href="./images/icons.svg#linkedin" width="24" height="24"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== END OF MOBILE MENU ====== -->
+
     </header>
 
     <main>
@@ -124,7 +200,8 @@
                 <h2 class="staff-title">Our staff</h2>
                 <ul class="staff-list">
                     <li class="staff-item staff-card">
-                        <img class="staff-img" src="./images/staff-img-1.jpg" alt="Profile picture" width="264">
+                        <img class="staff-img" srcset="./images/staff-img-1.jpg 1x, ./images/staff-img-1@2x.jpg 2x"
+                              src="./images/staff-img-1.jpg" alt="Profile picture" width="264">
                         <div class="staff-card-wrapper">
                             <h3 class="staff-card-title">Mark Guerrero</h3>
                             <p class="staff-card-text">Product Designer</p>
@@ -169,7 +246,8 @@
                         </div>
                     </li>
                     <li class="staff-item staff-card">
-                        <img class="staff-img" src="./images/staff-img-2.jpg" alt="Profile picture" width="264">
+                        <img class="staff-img" srcset="./images/staff-img-2.jpg 1x, ./images/staff-img-2@2x.jpg 2x"
+                              src="./images/staff-img-2.jpg" alt="Profile picture" width="264">
                         <div class="staff-card-wrapper">
                             <h3 class="staff-card-title">Tom Ford</h3>
                             <p class="staff-card-text">Frontend Developer</p>
@@ -214,7 +292,8 @@
                         </div>
                     </li>
                     <li class="staff-item staff-card">
-                        <img class="staff-img" src="./images/staff-img-3.jpg" alt="Profile picture" width="264">
+                        <img class="staff-img" srcset="./images/staff-img-3.jpg 1x, ./images/staff-img-3@2x.jpg 2x"
+                              src="./images/staff-img-3.jpg" alt="Profile picture" width="264">
                         <div class="staff-card-wrapper">
                             <h3 class="staff-card-title">Camila Garcia</h3>
                             <p class="staff-card-text">Marketing</p>
@@ -259,7 +338,8 @@
                         </div>
                     </li>
                     <li class="staff-item staff-card">
-                        <img class="staff-img" src="./images/staff-img-4.jpg" alt="Profile picture" width="264">
+                        <img class="staff-img" srcset="./images/staff-img-4.jpg 1x, ./images/staff-img-4@2x.jpg 2x"
+                              src="./images/staff-img-4.jpg" alt="Profile picture" width="264">
                         <div class="staff-card-wrapper">
                             <h3 class="staff-card-title">Daniel Wilson</h3>
                             <p class="staff-card-text">UI Designer</p>
@@ -313,8 +393,18 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img class="portfolio-img" src="./images/portfolio-img-1.jpg" alt="Banking App image"
-                                  width="360">
+                            <picture class="portfolio-img">
+                                <source
+                                      srcset="./images/desktop/portfolio-img-1.jpg 1x, ./images/desktop/portfolio-img-1@2x.jpg 2x"
+                                      media="(min-width: 1158px)" />
+                                <source
+                                      srcset="./images/tablet/portfolio-img-1.jpg 1x, ./images/tablet/portfolio-img-1@2x.jpg 2x"
+                                      media="(min-width: 768px)" />
+                                <source
+                                      srcset="./images/mobile/portfolio-img-1.jpg 1x, ./images/mobile/portfolio-img-1@2x.jpg 2x"
+                                      media="(max-width: 767px)" />
+                                <img src="./images/desktop/portfolio-img-1.jpg" alt="Banking App image" width="360">
+                            </picture>
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -326,8 +416,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img class="portfolio-img" src="./images/portfolio-img-2.jpg" alt="Payment service image"
-                                  width="360">
+                            <picture class="portfolio-img">
+                                <source
+                                      srcset="./images/desktop/portfolio-img-2.jpg 1x, ./images/desktop/portfolio-img-2@2x.jpg 2x"
+                                      media="(min-width: 1158px)" />
+                                <source
+                                      srcset="./images/tablet/portfolio-img-2.jpg 1x, ./images/tablet/portfolio-img-2@2x.jpg 2x"
+                                      media="(min-width: 768px)" />
+                                <source
+                                      srcset="./images/mobile/portfolio-img-2.jpg 1x, ./images/mobile/portfolio-img-2@2x.jpg 2x"
+                                      media="(max-width: 767px)" />
+                                <img src="./images/desktop/portfolio-img-2.jpg" alt="Payment service image" width="360">
+                            </picture>
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -339,8 +439,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img class="portfolio-img" src="./images/portfolio-img-3.jpg" alt="Meditation App image"
-                                  width="360">
+                            <picture class="portfolio-img">
+                                <source
+                                      srcset="./images/desktop/portfolio-img-3.jpg 1x, ./images/desktop/portfolio-img-3@2x.jpg 2x"
+                                      media="(min-width: 1158px)" />
+                                <source
+                                      srcset="./images/tablet/portfolio-img-3.jpg 1x, ./images/tablet/portfolio-img-3@2x.jpg 2x"
+                                      media="(min-width: 768px)" />
+                                <source
+                                      srcset="./images/mobile/portfolio-img-3.jpg 1x, ./images/mobile/portfolio-img-3@2x.jpg 2x"
+                                      media="(max-width: 767px)" />
+                                <img src="./images/desktop/portfolio-img-3.jpg" alt="Meditation app image" width="360">
+                            </picture>
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -352,8 +462,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img class="portfolio-img" src="./images/portfolio-img-4.jpg" alt="Taxi Service image"
-                                  width="360">
+                            <picture class="portfolio-img">
+                                <source
+                                      srcset="./images/desktop/portfolio-img-4.jpg 1x, ./images/desktop/portfolio-img-4@2x.jpg 2x"
+                                      media="(min-width: 1158px)" />
+                                <source
+                                      srcset="./images/tablet/portfolio-img-4.jpg 1x, ./images/tablet/portfolio-img-4@2x.jpg 2x"
+                                      media="(min-width: 768px)" />
+                                <source
+                                      srcset="./images/mobile/portfolio-img-4.jpg 1x, ./images/mobile/portfolio-img-4@2x.jpg 2x"
+                                      media="(max-width: 767px)" />
+                                <img src="./images/desktop/portfolio-img-4.jpg" alt="Taxi service image" width="360">
+                            </picture>
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -365,8 +485,19 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img class="portfolio-img" src="./images/portfolio-img-5.jpg"
-                                  alt="Screen Illustrations image" width="360">
+                            <picture class="portfolio-img">
+                                <source
+                                      srcset="./images/desktop/portfolio-img-5.jpg 1x, ./images/desktop/portfolio-img-5@2x.jpg 2x"
+                                      media="(min-width: 1158px)" />
+                                <source
+                                      srcset="./images/tablet/portfolio-img-5.jpg 1x, ./images/tablet/portfolio-img-5@2x.jpg 2x"
+                                      media="(min-width: 768px)" />
+                                <source
+                                      srcset="./images/mobile/portfolio-img-5.jpg 1x, ./images/mobile/portfolio-img-5@2x.jpg 2x"
+                                      media="(max-width: 767px)" />
+                                <img src="./images/desktop/portfolio-img-5.jpg" alt="Screen illustrations image"
+                                      width="360">
+                            </picture>
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -378,8 +509,18 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-overlay-container">
-                            <img class="portfolio-img" src="./images/portfolio-img-6.jpg" alt="Online Courses image"
-                                  width="360">
+                            <picture class="portfolio-img">
+                                <source
+                                      srcset="./images/desktop/portfolio-img-6.jpg 1x, ./images/desktop/portfolio-img-6@2x.jpg 2x"
+                                      media="(min-width: 1158px)" />
+                                <source
+                                      srcset="./images/tablet/portfolio-img-6.jpg 1x, ./images/tablet/portfolio-img-6@2x.jpg 2x"
+                                      media="(min-width: 768px)" />
+                                <source
+                                      srcset="./images/mobile/portfolio-img-6.jpg 1x, ./images/mobile/portfolio-img-6@2x.jpg 2x"
+                                      media="(max-width: 767px)" />
+                                <img src="./images/desktop/portfolio-img-6.jpg" alt="Online courses image" width="360">
+                            </picture>
                             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -518,85 +659,6 @@
     </div>
 
     <!-- ====== END OF MODAL ORDER SERVICE ====== -->
-
-
-    <!-- ====== MOBILE MENU ====== -->
-
-    <button type="button" class="menu-open-button" data-menu-open>
-        <svg width="24" height="24">
-            <use href="./images/icons.svg#mobile-menu"></use>
-        </svg>
-    </button>
-
-    <div class="menu-backdrop is-hidden" data-menu>
-        <div class="modal-menu-container">
-            <button type="button" class="menu-close-button" data-menu-close>
-                <svg class="close-icon" width="8" height="8">
-                    <use href="./images/icons.svg#close-button"></use>
-                </svg>
-            </button>
-            <nav class="modal-nav-block">
-                <ul class="modal-nav-list">
-                    <li class="modal-nav-item">
-                        <a href="./index.html" class="modal-nav-link" data-menu-close>Studio</a>
-                    </li>
-                    <li class="modal-nav-item">
-                        <a href="./index.html" class="modal-nav-link" data-menu-close>Portfolio</a>
-                    </li>
-                    <li class="modal-nav-item">
-                        <a href="./index.html" class="modal-nav-link" data-menu-close>Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="modal-address-block">
-                <ul class="modal-address-list">
-                    <li class="modal-address-item">
-                        <a href="tel:+110001111111" class="modal-address-link" data-menu-close>+11 (000) 111-11-11</a>
-                    </li>
-                    <li class="modal-address-item">
-                        <a href="mailto:info@devstudio.com" class="modal-address-link"
-                              data-menu-close>info@devstudio.com</a>
-                    </li>
-                </ul>
-            </address>
-            <ul class="modal-menu-media-list">
-                <li class="modal-menu-media-item">
-                    <a class="modal-menu-media-link" href="https://www.instagram.com/" target="_blank"
-                          rel="no-opener no-referrer">
-                        <svg class="icon-container" width="24" height="24">
-                            <use class="icon" href="./images/icons.svg#instagram" width="24" height="24"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-menu-media-item">
-                    <a class="modal-menu-media-link" href="https://twitter.com/?lang=uk" target="_blank"
-                          rel="no-opener no-referrer">
-                        <svg class="icon-container" width="24" height="24">
-                            <use class="icon" href="./images/icons.svg#twitter" width="24" height="24"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-menu-media-item">
-                    <a class="modal-menu-media-link" href="https://www.facebook.com/" target="_blank"
-                          rel="no-opener no-referrer">
-                        <svg class="icon-container" width="24" height="24">
-                            <use class="icon" href="./images/icons.svg#facebook" width="24" height="24"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-menu-media-item">
-                    <a class="modal-menu-media-link" href="https://www.linkedin.com/" target="_blank"
-                          rel="no-opener no-referrer">
-                        <svg class="icon-container" width="24" height="24">
-                            <use class="icon" href="./images/icons.svg#linkedin" width="24" height="24"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- ====== END OF MODAL MENU ====== -->
 
     <script src="./javascript/modal.js"></script>
 </body>

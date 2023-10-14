@@ -50,11 +50,18 @@ input {
     margin: 0 auto;
 }
 
-.container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .section {
@@ -123,9 +130,14 @@ input {
 }
 
 .nav-list {
-    display: flex;
+    display: none;
     gap: 40px;
 }
+
+/* .nav-list {
+    display: flex;
+    gap: 40px;
+} */
 
 .nav-item {}
 
@@ -183,9 +195,14 @@ input {
 }
 
 .address-list {
-    display: flex;
+    display: none;
     gap: 40px;
 }
+
+/* .address-list {
+    display: flex;
+    gap: 40px;
+} */
 
 .address-item {}
 

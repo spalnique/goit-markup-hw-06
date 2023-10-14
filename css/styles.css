@@ -1029,7 +1029,6 @@ input[type="checkbox"]:checked + label > span {
 .mobile-menu-media-list {
     display: flex;
     gap: 40px;
-    justify-content: flex-start;
 }
 
 .mobile-menu-media-item {

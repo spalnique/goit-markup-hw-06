@@ -17,6 +17,7 @@ body {
 
 a {
     text-decoration: none;
+    font-style: normal;
 }
 
 ul {
@@ -992,7 +993,6 @@ input[type="checkbox"]:checked + label > span {
     color: #2E2F42;
     font-family: "Roboto", sans-serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -1017,7 +1017,6 @@ input[type="checkbox"]:checked + label > span {
     color: #434455;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -1065,7 +1064,7 @@ input[type="checkbox"]:checked + label > span {
 @media screen and (max-height: 519px) and (min-width: 510px) {
 
     .mobile-menu-container {
-        padding: 72px 24px 36px 24px;
+        padding: 36px 24px;
     }
 
     .mobile-nav-address-wrapper {}

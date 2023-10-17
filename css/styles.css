@@ -26,7 +26,7 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 button {
@@ -117,7 +117,6 @@ input {
 
 .nav-list {
     display: none;
-    gap: 40px;
 }
 
 .nav-item {}
@@ -373,7 +372,6 @@ input {
 .staff-media-list .media-item {}
 
 .staff-media-list .media-link {
-    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,7 +596,7 @@ input {
 .subscription-label {}
 
 .subscription-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     padding-left: 16px;
     color: #ffffff;
@@ -606,13 +604,14 @@ input {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscription-input::placeholder {
-    color: #ffffff;
+    color: inherit;
+    opacity: 0.6;
 }
 
 .subscription-button {
@@ -777,7 +776,7 @@ input {
     margin-bottom: 16px;
 }
 
-.textarea-container .form-item-label {
+.form-item-label {
     display: block;
     color: #8E8F99;
     font-size: 12px;
@@ -826,6 +825,7 @@ input {
     color: #8E8F99;
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
 input[type="checkbox"] + label > span {
@@ -837,11 +837,11 @@ input[type="checkbox"] + label > span {
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+    /* margin-right: 8px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
-    margin-right: 8px;
     flex-shrink: 0;
 }
 
@@ -899,9 +899,6 @@ input[type="checkbox"]:checked + label > span {
 
 
 .menu-open-button {
-    /* position: fixed;
-    top: 16px;
-    right: 16px; */
     width: 24px;
     height: 24px;
     border: 0;
@@ -1092,6 +1089,7 @@ input[type="checkbox"]:checked + label > span {
 
     .nav-list {
         display: flex;
+        gap: 40px;
     }
 
     .address-block {
@@ -1127,6 +1125,7 @@ input[type="checkbox"]:checked + label > span {
 
     .portfolio-list {
         column-gap: 24px;
+        row-gap: 72px;
     }
 
     .portfolio-item {

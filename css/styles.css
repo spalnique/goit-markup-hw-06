@@ -844,7 +844,7 @@ input {
     flex-shrink: 0;
 }
 
-input[type=checkbox]:checked + .privacy-label > .privacy-checkbox {
+input:checked + .privacy-label > .privacy-checkbox {
     background-color: #404BBF;
     border: none;
     fill: #f4f4fd;
